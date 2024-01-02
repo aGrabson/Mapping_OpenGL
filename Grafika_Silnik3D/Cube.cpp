@@ -6,8 +6,7 @@ void Cube::draw(unsigned int programShader,unsigned int texture,int textureNum)
     model = glm::translate(model, position);
 	model = glm::rotate(model, rotationAngleX,glm::vec3(1.0,0.0,0.0));
 	model = glm::rotate(model, rotationAngleY, glm::vec3(0.0, 1.0, 0.0));
-	model = glm::rotate(model, rotationAngleZ, glm::vec3(0.0, 0.0, 1.0));/*
-	model = glm::rotate(model, glm::radians((float)glfwGetTime() * -10.0f), glm::normalize(glm::vec3(1.0, 0.0, 1.0)));*/
+	model = glm::rotate(model, rotationAngleZ, glm::vec3(0.0, 0.0, 1.0));
 	model = glm::scale(model, scalingFactor);
     glUniformMatrix4fv(glGetUniformLocation(programShader, "model"), 1, GL_FALSE, &model[0][0]);
 	glBindTexture(GL_TEXTURE_2D, texture);

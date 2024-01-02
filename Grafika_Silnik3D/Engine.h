@@ -2,7 +2,6 @@
 #ifndef engine_h
 #define engine_h
 #include <string>
-#include "Point3D.h"
 #include "Camera.h"
 #include "BitmapHandler.h"
 #include <time.h>
@@ -183,7 +182,6 @@ public:
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-		//glEnable(GL_DEPTH_TEST);
 		this->window = glfwCreateWindow(width, height, Title.c_str(), monitor, NULL);
 		if (window == NULL)
 		{

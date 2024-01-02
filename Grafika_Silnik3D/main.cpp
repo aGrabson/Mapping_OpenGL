@@ -8,14 +8,12 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     glViewport(0, 0, width, height);
 }
 
-
-// timing
 float deltaTime = 0.0f;	
 float lastFrame = 0.0f;
 
 int main()
 {
-    Engine engine(1024,576,"Silnik3D",NULL);
+    Engine engine(1024,576,"Symulacja wypuklosci",NULL);
 
     glfwSetFramebufferSizeCallback(engine.getWindow(), framebuffer_size_callback);
     engine.setBackgroundColor(0, 0, 0, 10);

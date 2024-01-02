@@ -131,8 +131,6 @@ public:
 		glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, 14 * sizeof(float), (void*)(11 * sizeof(float)));
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-		
-		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	}
 	/**
 	 * @brief Rysowanie sześcianu
